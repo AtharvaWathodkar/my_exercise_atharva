@@ -1,9 +1,9 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork
-resource "google_compute_subnetwork" "my_private" {
-  name                     = "my_private"
+resource "google_compute_subnetwork" "myprivate" {
+  name                     = "myprivate"
   ip_cidr_range            = "10.0.0.0/18"
   region                   = "us-central1"
-  network                  = google_compute_network.my_vpc.id
+  network                  = google_compute_network.myvpc.id
   private_ip_google_access = true
 
   secondary_ip_range {
