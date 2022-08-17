@@ -1,6 +1,6 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork
-resource "google_compute_subnetwork" "private" {
-  name                     = "private"
+resource "google_compute_subnetwork" "my_private" {
+  name                     = "my_private"
   ip_cidr_range            = "10.0.0.0/18"
   region                   = "us-central1"
   network                  = google_compute_network.main.id

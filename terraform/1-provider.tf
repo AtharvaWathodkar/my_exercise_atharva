@@ -1,13 +1,13 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs
 provider "google" {
-  project = "devops-v4"
+  project = "burner-athwatho"
   region  = "us-central1"
 }
 
 # https://www.terraform.io/language/settings/backends/gcs
 terraform {
   backend "gcs" {
-    bucket = "antonputra-tf-state-staging"
+    bucket = "my_terraform_state"
     prefix = "terraform/state"
   }
   required_providers {

@@ -5,7 +5,7 @@ resource "google_service_account" "service-a" {
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_iam
 resource "google_project_iam_member" "service-a" {
-  project = "devops-v4"
+  project = "burner-athwatho"
   role    = "roles/storage.admin"
   member  = "serviceAccount:${google_service_account.service-a.email}"
 }
