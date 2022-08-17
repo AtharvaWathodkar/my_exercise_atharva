@@ -19,8 +19,7 @@ metadata:
 spec:
   ingressClassName: external-nginx
   rules:
-  - host: api.devopsbyexample.io
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
